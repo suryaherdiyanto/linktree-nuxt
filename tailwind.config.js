@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./*.vue"],
+  content: ["./**/*.vue"],
   theme: {
-    extend: {},
+    extend: {
+      minHeight: {
+        '1/2': '280px'
+      }
+    },
   },
   plugins: [],
 }
