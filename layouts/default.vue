@@ -1,8 +1,8 @@
 <template>
-    <div class="w-100 min-h-screen bg-gray-200">
+    <div class="w-100">
         <TheHeader />
 
-        <div class="container mx-auto py-7 min-h-screen">
+        <div class="container mx-auto py-7">
             <slot />
         </div>
         <TheFooter />

@@ -7,8 +7,8 @@ const form = reactive({
 });
 </script>
 <template>
-    <div class="flex justify-center">
-        <div class="w-3/4 mt-5">
+    <div class="flex justify-center items-center h-128">
+        <div class="w-128">
             <UCard>
                 <template #header>
                     <h2 class="font-semibold">Login</h2>
