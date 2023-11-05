@@ -11,7 +11,7 @@ const form = reactive({
         <div class="w-128">
             <UCard>
                 <template #header>
-                    <h2 class="font-semibold">Login</h2>
+                    <h2 class="font-semibold">Create Account</h2>
                 </template>
                 <div class="form">
                     <div class="mb-3">
@@ -19,12 +19,20 @@ const form = reactive({
                         <UInput v-model="form.username" id="username"></UInput>
                     </div>
                     <div class="mb-3">
+                        <label for="email" class="font-semibold text-gray-600">Email</label>
+                        <UInput v-model="form.email" id="email"></UInput>
+                    </div>
+                    <div class="mb-3">
                         <label for="password" class="font-semibold text-gray-600">Password</label>
                         <UInput v-model="form.password" id="password" type="password"></UInput>
                     </div>
+                    <div class="mb-3">
+                        <label for="password_confirmation" class="font-semibold text-gray-600">Password Confirmation</label>
+                        <UInput v-model="form.password_confirmation" id="password_confirmation" type="password"></UInput>
+                    </div>
                     <div class="flex">
-                        <UButton @click.prevent="useGoToPage('/register')" class="ml-auto" size="xl" color="primary" variant="link">Create Account</UButton>
-                        <UButton class="ml-3" size="xl">Log In</UButton>
+                        <UButton @click.prevent="useGoBack" class="ml-auto" size="xl" color="primary" variant="link">Back</UButton>
+                        <UButton class="ml-3" size="xl">Register</UButton>
                     </div>
                 </div>
             </UCard>
